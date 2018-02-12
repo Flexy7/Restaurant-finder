@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="25dp">
+
+
+    <TextView
+        android:id="@+id/activity_restaurant_infoViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textColor="@color/colorBlack"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/activity_restaurant_infoViewAddress"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/activity_restaurant_infoViewAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="10dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/activity_restaurant_infoViewRating"
+        app:layout_constraintStart_toStartOf="@+id/line"
+        app:layout_constraintTop_toBottomOf="@+id/activity_restaurant_infoViewName" />
+
+
+    <TextView
+        android:id="@+id/activity_restaurant_infoViewRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="20dp"
+        android:padding="5dp"
+        android:text="TextView"
+        android:textColor="@color/colorWhite"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/activity_restaurant_infoViewAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/activity_restaurant_infoViewAddress" />
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/line_shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_restaurant_infoViewAddress" />
+
+    <TextView
+        android:id="@+id/activity_restaurant_infoViewKitchenTypeString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="@string/kitchen_type"
+        app:layout_constraintBaseline_toBaselineOf="@+id/activity_restaurant_infoViewKitchenType"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/activity_restaurant_infoViewCostString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:text="@string/avg_cost"
+        app:layout_constraintBaseline_toBaselineOf="@+id/activity_restaurant_infoViewAvgCost"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/activity_restaurant_infoViewKitchenType"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="13dp"
+        android:text="TextView"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintStart_toEndOf="@+id/activity_restaurant_infoViewCostString"
+        app:layout_constraintTop_toBottomOf="@+id/line" />
+
+    <TextView
+        android:id="@+id/activity_restaurant_infoViewAvgCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:text="TextView"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintStart_toStartOf="@+id/activity_restaurant_infoViewKitchenType"
+        app:layout_constraintTop_toBottomOf="@+id/activity_restaurant_infoViewKitchenType" />
+
+    <ImageView
+        android:id="@+id/activity_restaurant_infoButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="32dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toTopOf="@+id/activity_restaurant_infoMealString"
+        app:layout_constraintEnd_toEndOf="@+id/line"
+        app:layout_constraintStart_toEndOf="@+id/activity_restaurant_infoViewAddress"
+        app:layout_constraintTop_toBottomOf="@+id/activity_restaurant_infoViewRating"
+        app:srcCompat="@drawable/map_icon" />
+
+    <TextView
+        android:id="@+id/activity_restaurant_infoMealString"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:text="@string/daily_menu"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_restaurant_infoViewAvgCost" />
+
+    <ListView
+        android:id="@+id/activity_restaurant_infoList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="14dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="22dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_restaurant_infoMealString" />
+
+
+</android.support.constraint.ConstraintLayout>

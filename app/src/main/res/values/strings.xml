@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Restaurace</string>
+    <string name="search_hint">search</string>
+    <string name="kitchen_type">Kitchen type </string>
+    <string name="avg_cost">Average cost </string>
+    <string name="cost">%1$s %2$s for two</string>
+    <string name="daily_menu">Daily menu</string>
+    <string name="searched">Searched</string>
+
+</resources>
